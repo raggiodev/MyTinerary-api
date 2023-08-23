@@ -1,4 +1,4 @@
-import { Router } from "express";
+import {Router} from "express";
 import citiesRouter from "./citiesRouter.js";
 
 const indexRouter = Router();
