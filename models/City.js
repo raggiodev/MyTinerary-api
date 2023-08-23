@@ -1,9 +1,17 @@
-import mongoose from 'mongoose';
+import {Schema, model} from 'mongoose';
 
-const citySchema = new mongoose.Schema({
-  name: String,
-  photo: String,
-  country: String,
+const citySchema = Schema({
+  city: { type: String, required: true, unique: true },
+  country: { type: String, required: true },
+  description: { type: String, required: true },
+  fundation: { type: String, required: true },
+  population: { type: Number, required: true },
+  photo: { type: String, required: true },
+},
+{
+  timestamps: true
 });
 
-export default mongoose.model('City', citySchema);
+const City = model('Cities', citySchema);
+
+export default City;
