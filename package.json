@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JoeTheorium/mytinerary-API-fernandoRaggio.git"
+    "url": "git+https://github.com/JoeTheorium/mytinerary-API-fernandoraggio.git"
   },
   "author": "JoeTheorium",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JoeTheorium/mytinerary-API-fernandoRaggio/issues"
+    "url": "https://github.com/JoeTheorium/mytinerary-API-fernandoraggio/issues"
   },
-  "homepage": "https://github.com/JoeTheorium/mytinerary-API-fernandoRaggio#readme",
+  "homepage": "https://github.com/JoeTheorium/mytinerary-API-fernandoraggio#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
