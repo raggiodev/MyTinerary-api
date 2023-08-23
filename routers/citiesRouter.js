@@ -24,7 +24,7 @@ const {
 const citiesRouter = Router();
 
 citiesRouter.post('/', createCity);
-citiesRouter.post('/', createManyCities);
+citiesRouter.post('/many/', createManyCities);
 citiesRouter.get('/', getAllCities);
 citiesRouter.get('/id/:id', getCityById);
 citiesRouter.get('/:city', getCityByName);
