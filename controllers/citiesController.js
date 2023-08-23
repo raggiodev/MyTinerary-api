@@ -12,11 +12,22 @@ citiesController.createCity = async (req, res) => {
   }
 };
 
+// Crear muchas ciudades
+citiesController.createManyCities = async (req, res, next) => {
+  try {
+      let cities = await City.insertMany(req.body)
+      res.status(201).json({ response: cities})
+  } catch (err) {
+      res.status(500).json({ response: err})
+  }
+},
+
 // Obtener todas las ciudades
 citiesController.getAllCities = async (req, res) => {
   try {
     const cities = await City.find();
     res.status(200).json({ response: cities });
+    //res.send("Está funcionando")
   } catch (error) {
     res.status(500).json({ response: error });
   }
