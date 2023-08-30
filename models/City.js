@@ -7,6 +7,7 @@ const citySchema = Schema({
   fundation: { type: String, required: true },
   population: { type: Number, required: true },
   photo: { type: String, required: true },
+  itineraries: [{ type: Schema.Types.ObjectId, ref: 'Itinerary' }], // Referencia al model 'Itinerary'
 },
 {
   timestamps: true

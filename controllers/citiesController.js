@@ -2,22 +2,24 @@ import City from "../models/City.js";
 
 const citiesController = {};
 
-// Crear una ciudad
+// Crear una ciudad - POST
 citiesController.createCity = async (req, res) => {
   try {
     const newCity = await City.create(req.body);
     res.status(201).json({ response: newCity });
-  } catch (error) {
+  }
+  catch (error) {
     res.status(500).json({ response: error });
   }
 };
 
-// Crear muchas ciudades
+// Crear muchas ciudades - POST
 citiesController.createManyCities = async (req, res, next) => {
   try {
       let cities = await City.insertMany(req.body)
       res.status(201).json({ response: cities})
-  } catch (err) {
+  }
+  catch (err) {
       res.status(500).json({ response: err})
   }
 },
@@ -28,7 +30,8 @@ citiesController.getAllCities = async (req, res) => {
     const cities = await City.find();
     res.status(200).json({ response: cities });
     //res.send("Está funcionando")
-  } catch (error) {
+  }
+  catch (error) {
     res.status(500).json({ response: error });
   }
 };
@@ -38,7 +41,8 @@ citiesController.getCityById = async (req, res) => {
   try {
     const city = await City.findById(req.params.id);
     res.status(200).json({ response: city });
-  } catch (error) {
+  }
+  catch (error) {
     res.status(500).json({ response: error });
   }
 };
@@ -48,7 +52,8 @@ citiesController.getCityByName = async (req, res) => {
   try {
     const city = await City.findOne({ city: req.params.city });
     res.status(200).json({ response: city });
-  } catch (error) {
+  }
+  catch (error) {
     res.status(500).json({ response: error });
   }
 };
@@ -62,7 +67,8 @@ citiesController.updateCity = async (req, res) => {
       { new: true }
     );
     res.status(200).json({ response: updatedCity });
-  } catch (error) {
+  }
+  catch (error) {
     res.status(500).json({ response: error });
   }
 };
@@ -72,7 +78,8 @@ citiesController.deleteCity = async (req, res) => {
   try {
     await City.findByIdAndDelete(req.body._id);
     res.status(200).json({ response: 'City deleted successfully' });
-  } catch (error) {
+  }
+  catch (error) {
     res.status(500).json({ response: error });
   }
 };
@@ -82,7 +89,8 @@ citiesController.getCitiesByCountry = async (req, res) => {
   try {
     const cities = await City.find({ country: req.params.country });
     res.status(200).json({ response: cities });
-  } catch (error) {
+  }
+  catch (error) {
     res.status(500).json({ response: error });
   }
 };
@@ -92,7 +100,8 @@ citiesController.getCitiesByPopulation = async (req, res) => {
   try {
     const cities = await City.find({ population: { $gt: req.params.population } });
     res.status(200).json({ response: cities });
-  } catch (error) {
+  }
+  catch (error) {
     res.status(500).json({ response: error });
   }
 };
@@ -102,7 +111,8 @@ citiesController.getCitiesFoundedBefore = async (req, res) => {
   try {
     const cities = await City.find({ fundation: { $lt: req.params.date } });
     res.status(200).json({ response: cities });
-  } catch (error) {
+  }
+  catch (error) {
     res.status(500).json({ response: error });
   }
 };
@@ -112,7 +122,8 @@ citiesController.getFeaturedCities = async (req, res) => {
   try {
     const cities = await City.find({ population: { $gt: 1000000 } });
     res.status(200).json({ response: cities });
-  } catch (error) {
+  }
+  catch (error) {
     res.status(500).json({ response: error });
   }
 };
@@ -124,7 +135,8 @@ citiesController.getCitiesByPopulationRange = async (req, res) => {
     const maxPopulation = parseInt(req.params.max);
     const cities = await City.find({ population: { $gte: minPopulation, $lte: maxPopulation } });
     res.status(200).json({ response: cities });
-  } catch (error) {
+  }
+  catch (error) {
     res.status(500).json({ response: error });
   }
 };
@@ -135,7 +147,8 @@ citiesController.getCitiesByPopulationOrder = async (req, res) => {
     const sortOrder = req.params.order === 'asc' ? 1 : -1;
     const cities = await City.find().sort({ population: sortOrder });
     res.status(200).json({ response: cities });
-  } catch (error) {
+  }
+  catch (error) {
     res.status(500).json({ response: error });
   }
 };
@@ -149,7 +162,8 @@ citiesController.getCitiesByPopulationRangeAndNameOrder = async (req, res) => {
     const cities = await City.find({ population: { $gte: minPopulation, $lte: maxPopulation } })
       .sort({ city: sortOrder });
     res.status(200).json({ response: cities });
-  } catch (error) {
+  }
+  catch (error) {
     res.status(500).json({ response: error });
   }
 };
@@ -159,7 +173,8 @@ citiesController.getCitiesWithShortDescriptions = async (req, res) => {
   try {
     const cities = await City.find({}, { smalldescription: 1, city: 1 });
     res.status(200).json({ response: cities });
-  } catch (error) {
+  }
+  catch (error) {
     res.status(500).json({ response: error });
   }
 };
@@ -171,7 +186,8 @@ citiesController.getCitiesByCountryAndPopulationOrder = async (req, res) => {
     const cities = await City.find({ country: req.params.country })
       .sort({ population: sortOrder });
     res.status(200).json({ response: cities });
-  } catch (error) {
+  }
+  catch (error) {
     res.status(500).json({ response: error });
   }
 };

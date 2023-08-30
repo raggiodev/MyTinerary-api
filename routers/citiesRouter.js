@@ -1,43 +1,28 @@
-import {Router} from "express";
+import {Router} from 'express';
 import citiesController from '../controllers/citiesController.js';
-
-const {
-  createCity,
-  createManyCities,
-  getAllCities,
-  getCityById,
-  getCityByName,
-  updateCity,
-  deleteCity,
-  getCitiesByCountry,
-  getCitiesByPopulation,
-  getCitiesFoundedBefore,
-  getFeaturedCities,
-  getCitiesByPopulationRange,
-  getCitiesByPopulationOrder,
-  getCitiesByPopulationRangeAndNameOrder,
-  getCitiesWithShortDescriptions,
-  getCitiesByCountryAndPopulationOrder
-}
-= citiesController;
+import itinerariesController from '../controllers/itinerariesController.js';
 
 const citiesRouter = Router();
 
-citiesRouter.post('/', createCity);
-citiesRouter.post('/many/', createManyCities);
-citiesRouter.get('/', getAllCities);
-citiesRouter.get('/id/:id', getCityById);
-citiesRouter.get('/:city', getCityByName);
-citiesRouter.get('/country/:country', getCitiesByCountry);
-citiesRouter.get('/population/:population', getCitiesByPopulation);
-citiesRouter.get('/foundedBefore/:date', getCitiesFoundedBefore);
-citiesRouter.get('/featured', getFeaturedCities);
-citiesRouter.get('/populationRange/:min/:max', getCitiesByPopulationRange);
-citiesRouter.get('/populationOrder/:order', getCitiesByPopulationOrder);
-citiesRouter.get('/populationNameOrder/:min/:max/:order', getCitiesByPopulationRangeAndNameOrder);
-citiesRouter.get('/shortDescriptions', getCitiesWithShortDescriptions);
-citiesRouter.get('/countryPopulationOrder/:country/:order', getCitiesByCountryAndPopulationOrder);
-citiesRouter.put('/', updateCity);
-citiesRouter.delete('/', deleteCity);
+// Creación de routes para 'cities'
+citiesRouter.post('/', citiesController.createCity);
+citiesRouter.post('/many/', citiesController.createManyCities);
+citiesRouter.get('/', citiesController.getAllCities);
+citiesRouter.get('/id/:id', citiesController.getCityById);
+citiesRouter.get('/:city', citiesController.getCityByName);
+citiesRouter.get('/country/:country', citiesController.getCitiesByCountry);
+citiesRouter.get('/population/:population', citiesController.getCitiesByPopulation);
+citiesRouter.get('/foundedBefore/:date', citiesController.getCitiesFoundedBefore);
+citiesRouter.get('/featured', citiesController.getFeaturedCities);
+citiesRouter.get('/populationRange/:min/:max', citiesController.getCitiesByPopulationRange);
+citiesRouter.get('/populationOrder/:order', citiesController.getCitiesByPopulationOrder);
+citiesRouter.get('/populationNameOrder/:min/:max/:order', citiesController.getCitiesByPopulationRangeAndNameOrder);
+citiesRouter.get('/shortDescriptions', citiesController.getCitiesWithShortDescriptions);
+citiesRouter.get('/countryPopulationOrder/:country/:order', citiesController.getCitiesByCountryAndPopulationOrder);
+citiesRouter.put('/', citiesController.updateCity);
+citiesRouter.delete('/', citiesController.deleteCity);
+
+// Creación de routes para obtener los itinerarios por 'city'
+citiesRouter.get('/:cityId/itineraries', itinerariesController.getItinerariesByCity);
 
 export default citiesRouter;
