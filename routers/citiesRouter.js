@@ -22,7 +22,8 @@ citiesRouter.get('/countryPopulationOrder/:country/:order', citiesController.get
 citiesRouter.put('/', citiesController.updateCity);
 citiesRouter.delete('/', citiesController.deleteCity);
 
-// Creación de routes para obtener los itinerarios por 'city'
+// Creación de routers para obtener los itinerarios por 'city'
+citiesRouter.post('/:cityId/itineraries', itinerariesController.createItinerary);
 citiesRouter.get('/:cityId/itineraries', itinerariesController.getItinerariesByCity);
 
 export default citiesRouter;

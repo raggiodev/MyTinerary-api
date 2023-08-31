@@ -1,14 +1,26 @@
-import Itinerary from '../models/Itinerary.js';
+import Itinerary from "../models/Itinerary.js";
 
 const itinerariesController = {
-
   // Crear un nuevo itinerario - POST
   createItinerary: async (req, res) => {
     try {
-      const newItinerary = await Itinerary.create(req.body);
-      res.status(201).json({ response: newItinerary });
+      const { title, author, price, duration, hashtags, city } = req.body;
+
+      const newItinerary = new Itinerary({
+        title,
+        author,
+        price,
+        duration,
+        hashtags,
+        city,
+      });
+
+      const savedItinerary = await newItinerary.save();
+
+      res.status(201).json(savedItinerary);
     } catch (error) {
-      res.status(500).json({ response: error });
+      console.error(error);
+      res.status(500).json({ message: "Error creating itinerary" });
     }
   },
 
@@ -50,7 +62,7 @@ const itinerariesController = {
   deleteItinerary: async (req, res) => {
     try {
       await Itinerary.findByIdAndDelete(req.params.id);
-      res.status(200).json({ response: 'Itinerary deleted successfully' });
+      res.status(200).json({ response: "Itinerary deleted successfully" });
     } catch (error) {
       res.status(500).json({ response: error });
     }
