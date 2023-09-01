@@ -22,7 +22,7 @@ citiesController.createManyCities = async (req, res, next) => {
   catch (err) {
       res.status(500).json({ response: err})
   }
-},
+};
 
 // Obtener todas las ciudades
 citiesController.getAllCities = async (req, res) => {
