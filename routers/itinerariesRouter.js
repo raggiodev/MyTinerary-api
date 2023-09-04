@@ -3,13 +3,8 @@ import itinerariesController from '../controllers/itinerariesController.js';
 
 const itinerariesRouter = Router();
 
-// Crear un nuevo itinerario - POST
+// Creación de routers para obtener los itinerarios por 'city'
 itinerariesRouter.post('/', itinerariesController.createItinerary);
-
-// Obtener todos los itinerarios - GET
-itinerariesRouter.get('/', itinerariesController.getAllItineraries);
-
-// Obtener un itinerario por su ID - GET
-itinerariesRouter.get('/:cityId', itinerariesController.getItineraryById); // /:cityId
+itinerariesRouter.get(':/cityId', itinerariesController.getItinerariesByCity);
 
 export default itinerariesRouter;
