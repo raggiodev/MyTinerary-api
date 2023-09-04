@@ -1,6 +1,5 @@
 import {Router} from 'express';
 import citiesController from '../controllers/citiesController.js';
-import itinerariesController from '../controllers/itinerariesController.js';
 
 const citiesRouter = Router();
 
@@ -21,9 +20,5 @@ citiesRouter.get('/shortDescriptions', citiesController.getCitiesWithShortDescri
 citiesRouter.get('/countryPopulationOrder/:country/:order', citiesController.getCitiesByCountryAndPopulationOrder);
 citiesRouter.put('/', citiesController.updateCity);
 citiesRouter.delete('/', citiesController.deleteCity);
-
-// Creación de routers para obtener los itinerarios por 'city'
-citiesRouter.post('/:cityId/itineraries', itinerariesController.createItinerary);
-citiesRouter.get('/:cityId/itineraries', itinerariesController.getItinerariesByCity);
 
 export default citiesRouter;

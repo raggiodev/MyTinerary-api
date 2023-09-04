@@ -8,5 +8,6 @@ indexRouter.get('/', (req, res, next) => {
 });
 
 indexRouter.use('/cities', citiesRouter);
+indexRouter.use('/itineraries', itinerariesRouter);
 
 export default indexRouter;
