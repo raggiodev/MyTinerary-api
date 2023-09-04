@@ -18,7 +18,7 @@ const itinerariesController = {
       //   hashtags
       // });
 
-      const savedItinerary = await itinerary.create(req.body);
+      const savedItinerary = await Itinerary.insertMany(req.body);
 
       res.status(201).json(savedItinerary);
     } catch (error) {
