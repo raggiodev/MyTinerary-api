@@ -4,21 +4,21 @@ const itinerariesController = {
   // Crear un nuevo itinerario - POST
   createItinerary: async (req, res) => {
     try {
-      const { title, city, author, authorPhoto, price, duration, photo, like, hashtags } = req.body;
+      // const { title, city, author, authorPhoto, price, duration, photo, like, hashtags } = req.body;
 
-      const newItinerary = new Itinerary({
-        title,
-        city,
-        author,
-        authorPhoto,
-        price,
-        duration,
-        photo,
-        like,
-        hashtags
-      });
+      // const newItinerary = new Itinerary({
+      //   title,
+      //   city,
+      //   author,
+      //   authorPhoto,
+      //   price,
+      //   duration,
+      //   photo,
+      //   like,
+      //   hashtags
+      // });
 
-      const savedItinerary = await newItinerary.save();
+      const savedItinerary = await itinerary.create(req.body);
 
       res.status(201).json(savedItinerary);
     } catch (error) {
