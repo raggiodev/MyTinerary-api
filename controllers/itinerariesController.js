@@ -4,7 +4,7 @@ const itinerariesController = {
   // Crear un nuevo itinerario - POST
   createItinerary: async (req, res) => {
     try {
-      const { title, author, price, duration, hashtags, city } = req.body;
+      const { title, city, author, authorPhoto, price, duration, photo, like, hashtags } = req.body;
 
       const newItinerary = new Itinerary({
         title,

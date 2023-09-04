@@ -1,5 +1,6 @@
 import {Router} from "express";
 import citiesRouter from "./citiesRouter.js"; // Necesario la extensión ".js"
+import itinerariesRouter from "./itinerariesRouter.js";
 
 const indexRouter = Router();
 
