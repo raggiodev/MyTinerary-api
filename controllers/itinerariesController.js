@@ -8,11 +8,14 @@ const itinerariesController = {
 
       const newItinerary = new Itinerary({
         title,
+        city,
         author,
+        authorPhoto,
         price,
         duration,
-        hashtags,
-        city,
+        photo,
+        like,
+        hashtags
       });
 
       const savedItinerary = await newItinerary.save();
