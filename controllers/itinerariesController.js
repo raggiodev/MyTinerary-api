@@ -1,4 +1,5 @@
 import Itinerary from "../models/Itinerary.js";
+import City from "../models/City.js";
 
 const itinerariesController = {
   // Crear un nuevo itinerario - POST
@@ -39,7 +40,7 @@ const itinerariesController = {
   // Obtener itinerarios por ID de ciudad
   getItinerariesByCity: async (req, res) => {
     try {
-      const cityId = req.params.cityId;
+      const cityId = await City.findOne({city: req.params.cityId});
       const itineraries = await Itinerary.find({ city: cityId });
       res.status(200).json({ response: itineraries });
     } catch (error) {
