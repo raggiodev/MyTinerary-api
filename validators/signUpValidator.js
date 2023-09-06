@@ -11,7 +11,7 @@ const complexityOptions = {
   requirementCount: 3,
 };
 
-export const signUpSchema = joi.object({
+const signUpSchema = joi.object({
   email: joi.string().email().required().messages({
     "string.empty": "El email no puede estar vacio",
     "any.required": "El campo email es requerido",
@@ -29,3 +29,5 @@ export const signUpSchema = joi.object({
   phone: joi.number(),
   verified: joi.boolean(),
 });
+
+export default signUpSchema;

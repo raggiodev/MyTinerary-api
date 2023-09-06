@@ -11,13 +11,15 @@ const complexityOptions = {
   requirementCount: 3,
 };
 
-export const signInSchema = joi.object({
+const signInSchema = joi.object({
   email: joi.string().email().required().messages({
-    "string.empty": "El email no puede estar vacio",
+    "string.empty": "El email no puede estar vacío",
     "any.required": "El campo email es requerido",
     "string.email": "El email debe tener @ y .com",
   }),
   password: joiPwd(complexityOptions).messages({
-
+    
   }),
 });
+
+export default signInSchema;
