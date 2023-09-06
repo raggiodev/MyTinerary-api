@@ -3,6 +3,12 @@ import express from 'express';
 import indexRouter from './routers/indexRouter.js';
 import cors from 'cors';
 import './config/database.js';
+import errorHandler from './middlewares/errorHandler.js'
+import notFoundHandler from './middlewares/notFoundHandler.js'
+
+// const corsOptions = {
+//     origin: 'http://localhost:5173/'
+// }
 
 const server = express();
 
