@@ -1,5 +1,4 @@
 // CITIES (15) - http://localhost:5000/api/cities/many
-
 [
   {
     "_id": "64fa501d4bbe915a1f740580",
@@ -10,9 +9,6 @@
     "population": 2891000,
     "photo": "https://c4.wallpaperflare.com/wallpaper/856/590/514/night-lights-road-tower-wallpaper-preview.jpg",
     "itineraries": [],
-    "__v": 0,
-    "createdAt": "2023-09-07T22:35:09.956Z",
-    "updatedAt": "2023-09-07T22:35:09.956Z"
   },
   {
     "_id": "64fa501d4bbe915a1f740581",
@@ -23,9 +19,6 @@
     "population": 12325232,
     "photo": "https://c0.wallpaperflare.com/preview/797/753/76/architectural-design-architecture-blue-brazil.jpg",
     "itineraries": [],
-    "__v": 0,
-    "createdAt": "2023-09-07T22:35:09.957Z",
-    "updatedAt": "2023-09-07T22:35:09.957Z"
   },
   {
     "_id": "64fa501d4bbe915a1f740582",
@@ -36,9 +29,6 @@
     "population": 8918653,
     "photo": "https://c0.wallpaperflare.com/preview/983/774/342/mexico-mexico-city-cdmx-ciudad-de-mexico.jpg",
     "itineraries": [],
-    "__v": 0,
-    "createdAt": "2023-09-07T22:35:09.957Z",
-    "updatedAt": "2023-09-07T22:35:09.957Z"
   },
   {
     "_id": "64fa501d4bbe915a1f740583",
@@ -49,9 +39,6 @@
     "population": 7282406,
     "photo": "https://c0.wallpaperflare.com/preview/862/151/658/colombia-monserrate-fog-clouds.jpg",
     "itineraries": [],
-    "__v": 0,
-    "createdAt": "2023-09-07T22:35:09.957Z",
-    "updatedAt": "2023-09-07T22:35:09.957Z"
   },
   {
     "_id": "64fa501d4bbe915a1f740584",
@@ -62,9 +49,6 @@
     "population": 9120500,
     "photo": "https://c0.wallpaperflare.com/preview/248/852/978/peru-lima-miraflores-lima-city-thumbnail.jpg",
     "itineraries": [],
-    "__v": 0,
-    "createdAt": "2023-09-07T22:35:09.957Z",
-    "updatedAt": "2023-09-07T22:35:09.957Z"
   },
   {
     "_id": "64fa501d4bbe915a1f740585",
@@ -75,9 +59,6 @@
     "population": 6411744,
     "photo": "https://c0.wallpaperflare.com/preview/757/846/354/costanera-center-chile-santiago-de-chile-costanera.jpg",
     "itineraries": [],
-    "__v": 0,
-    "createdAt": "2023-09-07T22:35:09.957Z",
-    "updatedAt": "2023-09-07T22:35:09.957Z"
   },
   {
     "_id": "64fa501d4bbe915a1f740586",
@@ -88,9 +69,6 @@
     "population": 1364064,
     "photo": "https://c0.wallpaperflare.com/preview/124/274/410/montevideo-uruguay-latina-city.jpg",
     "itineraries": [],
-    "__v": 0,
-    "createdAt": "2023-09-07T22:35:09.957Z",
-    "updatedAt": "2023-09-07T22:35:09.957Z"
   },
   {
     "_id": "64fa501d4bbe915a1f740587",
@@ -101,9 +79,6 @@
     "population": 2760806,
     "photo": "https://c1.wallpaperflare.com/preview/708/930/525/quito-city-panoramic-landscape.jpg",
     "itineraries": [],
-    "__v": 0,
-    "createdAt": "2023-09-07T22:35:09.957Z",
-    "updatedAt": "2023-09-07T22:35:09.957Z"
   },
   {
     "_id": "64fa501d4bbe915a1f740588",
@@ -114,9 +89,6 @@
     "population": 2851585,
     "photo": "https://c4.wallpaperflare.com/wallpaper/80/807/657/america-caracas-ciudad-sur-wallpaper-preview.jpg",
     "itineraries": [],
-    "__v": 0,
-    "createdAt": "2023-09-07T22:35:09.957Z",
-    "updatedAt": "2023-09-07T22:35:09.957Z"
   },
   {
     "_id": "64fa501d4bbe915a1f740589",
@@ -127,9 +99,6 @@
     "population": 878364,
     "photo": "https://c4.wallpaperflare.com/wallpaper/707/936/38/la-paz-city-bolivia-city-cityscape-hd-wallpaper-preview.jpg",
     "itineraries": [],
-    "__v": 0,
-    "createdAt": "2023-09-07T22:35:09.957Z",
-    "updatedAt": "2023-09-07T22:35:09.957Z"
   },
   {
     "_id": "64fa501d4bbe915a1f74058a",
@@ -140,9 +109,6 @@
     "population": 525294,
     "photo": "https://c0.wallpaperflare.com/preview/753/186/472/paraguay-ciudad-del-este-phone-photo-shoot.jpg",
     "itineraries": [],
-    "__v": 0,
-    "createdAt": "2023-09-07T22:35:09.958Z",
-    "updatedAt": "2023-09-07T22:35:09.958Z"
   },
   {
     "_id": "64fa501d4bbe915a1f74058b",
@@ -153,9 +119,6 @@
     "population": 428450,
     "photo": "https://c4.wallpaperflare.com/wallpaper/403/28/991/green-leaf-tree-near-body-of-water-during-daytime-colombia-colombia-wallpaper-preview.jpg",
     "itineraries": [],
-    "__v": 0,
-    "createdAt": "2023-09-07T22:35:09.958Z",
-    "updatedAt": "2023-09-07T22:35:09.958Z"
   },
   {
     "_id": "64fa501d4bbe915a1f74058c",
@@ -166,9 +129,6 @@
     "population": 2496303,
     "photo": "https://c4.wallpaperflare.com/wallpaper/85/101/144/medellin-republic-of-colombia-wallpaper-preview.jpg",
     "itineraries": [],
-    "__v": 0,
-    "createdAt": "2023-09-07T22:35:09.958Z",
-    "updatedAt": "2023-09-07T22:35:09.958Z"
   },
   {
     "_id": "64fa501d4bbe915a1f74058d",
@@ -179,9 +139,6 @@
     "population": 6747815,
     "photo": "https://c4.wallpaperflare.com/wallpaper/389/22/532/travel-tourism-christ-the-redeemer-brazil-wallpaper-preview.jpg",
     "itineraries": [],
-    "__v": 0,
-    "createdAt": "2023-09-07T22:35:09.958Z",
-    "updatedAt": "2023-09-07T22:35:09.958Z"
   },
   {
     "_id": "64fa501d4bbe915a1f74058e",
@@ -192,9 +149,6 @@
     "population": 2135498,
     "photo": "https://c4.wallpaperflare.com/wallpaper/730/430/537/havana-cuba-sunrise-wallpaper-preview.jpg",
     "itineraries": [],
-    "__v": 0,
-    "createdAt": "2023-09-07T22:35:09.958Z",
-    "updatedAt": "2023-09-07T22:35:09.958Z"
   }
 ];
 
@@ -475,4 +429,4 @@
     "likes": 8,
     "hashtags": ["#nightlife", "#party", "#music"]
   }
-]
+];
