@@ -156,7 +156,7 @@
 [
   {
     "title": "Explore Buenos Aires Architecture",
-    "city": "64fa501d4bbe915a1f740580",
+    "city": "64fbc6524280a9e4479ec702",
     "author": "Jose Zaccaro",
     "authorPhoto": "https://unavatar.io/github/JoseZaccaro",
     "price": 2,
@@ -167,7 +167,7 @@
   },
   {
     "title": "Tango Night in Buenos Aires",
-    "city": "64fa501d4bbe915a1f740580",
+    "city": "64fbc6524280a9e4479ec702",
     "author": "Cinthya Di Risio",
     "authorPhoto": "https://unavatar.io/github/cinthyadirisio",
     "price": 3,
@@ -178,7 +178,7 @@
   },
   {
     "title": "Buenos Aires Food Adventure",
-    "city": "64fa501d4bbe915a1f740580",
+    "city": "64fbc6524280a9e4479ec702",
     "author": "Nicolas Cirulli",
     "authorPhoto": "https://unavatar.io/github/NicolasCirulli",
     "price": 4,
@@ -189,7 +189,7 @@
   },
   {
     "title": "São Paulo Street Art Tour",
-    "city": "64fa501d4bbe915a1f740581",
+    "city": "64fbc6524280a9e4479ec703",
     "author": "Jose Zaccaro",
     "authorPhoto": "https://unavatar.io/github/JoseZaccaro",
     "price": 3,
@@ -200,7 +200,7 @@
   },
   {
     "title": "São Paulo Culinary Delights",
-    "city": "64fa501d4bbe915a1f740581",
+    "city": "64fbc6524280a9e4479ec703",
     "author": "Cinthya Di Risio",
     "authorPhoto": "https://unavatar.io/github/cinthyadirisio",
     "price": 5,
@@ -211,7 +211,7 @@
   },
   {
     "title": "São Paulo Cultural Immersion",
-    "city": "64fa501d4bbe915a1f740581",
+    "city": "64fbc6524280a9e4479ec703",
     "author": "Nicolas Cirulli",
     "authorPhoto": "https://unavatar.io/github/NicolasCirulli",
     "price": 4,
@@ -222,7 +222,7 @@
   },
   {
     "title": "Bogotá Andean Hike",
-    "city": "64fa501d4bbe915a1f740583",
+    "city": "64fbc6524280a9e4479ec705",
     "author": "Jose Zaccaro",
     "authorPhoto": "https://unavatar.io/github/JoseZaccaro",
     "price": 2,
@@ -233,7 +233,7 @@
   },
   {
     "title": "Bogotá Coffee Tasting",
-    "city": "64fa501d4bbe915a1f740583",
+    "city": "64fbc6524280a9e4479ec705",
     "author": "Cinthya Di Risio",
     "authorPhoto": "https://unavatar.io/github/cinthyadirisio",
     "price": 3,
@@ -244,7 +244,7 @@
   },
   {
     "title": "Lima Historic Walk",
-    "city": "64fa501d4bbe915a1f740584",
+    "city": "64fbc6524280a9e4479ec706",
     "author": "Nicolas Cirulli",
     "authorPhoto": "https://unavatar.io/github/NicolasCirulli",
     "price": 2,
@@ -255,7 +255,7 @@
   },
   {
     "title": "Lima Culinary Experience",
-    "city": "64fa501d4bbe915a1f740584",
+    "city": "64fbc6524280a9e4479ec706",
     "author": "Jose Zaccaro",
     "authorPhoto": "https://unavatar.io/github/JoseZaccaro",
     "price": 3,
@@ -266,7 +266,7 @@
   },
   {
     "title": "Montevideo Beach Day",
-    "city": "64fa501d4bbe915a1f740586",
+    "city": "64fbc6524280a9e4479ec708",
     "author": "Cinthya Di Risio",
     "authorPhoto": "https://unavatar.io/github/cinthyadirisio",
     "price": 2,
@@ -277,7 +277,7 @@
   },
   {
     "title": "Montevideo Old Town Tour",
-    "city": "64fa501d4bbe915a1f740586",
+    "city": "64fbc6524280a9e4479ec708",
     "author": "Nicolas Cirulli",
     "authorPhoto": "https://unavatar.io/github/NicolasCirulli",
     "price": 3,
@@ -288,7 +288,7 @@
   },
   {
     "title": "Montevideo Sunset Cruise",
-    "city": "64fa501d4bbe915a1f740586",
+    "city": "64fbc6524280a9e4479ec708",
     "author": "Jose Zaccaro",
     "authorPhoto": "https://unavatar.io/github/JoseZaccaro",
     "price": 4,
@@ -299,7 +299,7 @@
   },
   {
     "title": "Quito Volcano Expedition",
-    "city": "64fa501d4bbe915a1f740587",
+    "city": "64fbc6524280a9e4479ec709",
     "author": "Cinthya Di Risio",
     "authorPhoto": "https://unavatar.io/github/cinthyadirisio",
     "price": 5,
@@ -310,7 +310,7 @@
   },
   {
     "title": "La Paz High Altitude Adventure",
-    "city": "64fa501d4bbe915a1f740589",
+    "city": "64fbc6524280a9e4479ec70b",
     "author": "Cinthya Di Risio",
     "authorPhoto": "https://unavatar.io/github/cinthyadirisio",
     "price": 5,
@@ -321,7 +321,7 @@
   },
   {
     "title": "Asunción Craft Market Tour",
-    "city": "64fa501d4bbe915a1f74058a",
+    "city": "64fbc6524280a9e4479ec70c",
     "author": "Nicolas Cirulli",
     "authorPhoto": "https://unavatar.io/github/NicolasCirulli",
     "price": 2,
@@ -332,7 +332,7 @@
   },
   {
     "title": "Asunción Riverside Stroll",
-    "city": "64fa501d4bbe915a1f74058a",
+    "city": "64fbc6524280a9e4479ec70c",
     "author": "Jose Zaccaro",
     "authorPhoto": "https://unavatar.io/github/JoseZaccaro",
     "price": 1,
@@ -343,7 +343,7 @@
   },
   {
     "title": "Cuzco Ancient Ruins Tour",
-    "city": "64fa501d4bbe915a1f74058b",
+    "city": "64fbc6524280a9e4479ec70d",
     "author": "Cinthya Di Risio",
     "authorPhoto": "https://unavatar.io/github/cinthyadirisio",
     "price": 4,
@@ -354,7 +354,7 @@
   },
   {
     "title": "Cuzco Inca Trail Adventure",
-    "city": "64fa501d4bbe915a1f74058b",
+    "city": "64fbc6524280a9e4479ec70d",
     "author": "Nicolas Cirulli",
     "authorPhoto": "https://unavatar.io/github/NicolasCirulli",
     "price": 5,
@@ -365,7 +365,7 @@
   },
   {
     "title": "Medellín Botanical Garden",
-    "city": "64fa501d4bbe915a1f74058c",
+    "city": "64fbc6524280a9e4479ec70e",
     "author": "Jose Zaccaro",
     "authorPhoto": "https://unavatar.io/github/JoseZaccaro",
     "price": 2,
@@ -376,7 +376,7 @@
   },
   {
     "title": "Medellín Street Food Adventure",
-    "city": "64fa501d4bbe915a1f74058c",
+    "city": "64fbc6524280a9e4479ec70e",
     "author": "Cinthya Di Risio",
     "authorPhoto": "https://unavatar.io/github/cinthyadirisio",
     "price": 3,
@@ -387,7 +387,7 @@
   },
   {
     "title": "Rio de Janeiro Beach Paradise",
-    "city": "64fa501d4bbe915a1f74058d",
+    "city": "64fbc6524280a9e4479ec70f",
     "author": "Nicolas Cirulli",
     "authorPhoto": "https://unavatar.io/github/NicolasCirulli",
     "price": 4,
@@ -398,7 +398,7 @@
   },
   {
     "title": "Rio de Janeiro Christ the Redeemer Tour",
-    "city": "64fa501d4bbe915a1f74058d",
+    "city": "64fbc6524280a9e4479ec70f",
     "author": "Jose Zaccaro",
     "authorPhoto": "https://unavatar.io/github/JoseZaccaro",
     "price": 3,
@@ -409,7 +409,7 @@
   },
   {
     "title": "Rio de Janeiro Carnival Experience",
-    "city": "64fa501d4bbe915a1f74058d",
+    "city": "64fbc6524280a9e4479ec70f",
     "author": "Cinthya Di Risio",
     "authorPhoto": "https://unavatar.io/github/cinthyadirisio",
     "price": 5,
@@ -420,7 +420,7 @@
   },
   {
     "title": "Rio de Janeiro Samba Night",
-    "city": "64fa501d4bbe915a1f74058d",
+    "city": "64fbc6524280a9e4479ec70f",
     "author": "Nicolas Cirulli",
     "authorPhoto": "https://unavatar.io/github/NicolasCirulli",
     "price": 4,
@@ -429,4 +429,4 @@
     "likes": 8,
     "hashtags": ["#nightlife", "#party", "#music"]
   }
-];
+]
