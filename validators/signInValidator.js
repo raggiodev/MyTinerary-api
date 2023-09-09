@@ -13,9 +13,9 @@ const complexityOptions = {
 
 const signInSchema = joi.object({
   email: joi.string().email().required().messages({
-    "string.empty": "El email no puede estar vacío",
-    "any.required": "El campo email es requerido",
-    "string.email": "El email debe tener @ y .com",
+    "string.empty": "Email cannot be empty.",
+    "any.required": "Email is required.",
+    "string.email": "Email must have @ & '.com'.",
   }),
   password: joiPwd(complexityOptions).messages({
     

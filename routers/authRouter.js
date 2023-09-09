@@ -7,6 +7,7 @@ import {emailExists} from "../middlewares/emailExists.js";
 import passport from "../middlewares/passport.js";
 
 const authRouter = Router();
+
 const { signUp, signIn, loginWithToken } = authController;
 
 authRouter.post("/", validator(signUpSchema), emailExists, signUp);

@@ -13,15 +13,15 @@ const complexityOptions = {
 
 const signUpSchema = joi.object({
   email: joi.string().email().required().messages({
-    "string.empty": "El email no puede estar vacio",
-    "any.required": "El campo email es requerido",
-    "string.email": "El email debe tener @ y .com",
+    "string.empty": "Email cannot be empty.",
+    "any.required": "Email is required.",
+    "string.email": "Email must have @ & '.com'.",
   }),
   password: joiPwd(complexityOptions).messages({
     
   }),
   name: joi.string().min(3).max(15).required().messages({
-    "string.min": "El minimo es 3 caracteres",
+    "string.min": "Minimum 3 characters.",
   }),
   photo: joi.string().uri(),
   birth_date: joi.date().max(Date.now()),
