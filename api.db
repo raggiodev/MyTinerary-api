@@ -1,7 +1,7 @@
 // CITIES (15) - http://localhost:5000/api/cities/many
 [
   {
-    "_id": "64fa501d4bbe915a1f740580",
+    "_id": "64fbc6524280a9e4479ec702",
     "city": "Buenos Aires",
     "country": "Argentina",
     "description": "Buenos Aires, the capital of Argentina, is renowned for its vibrant architecture and culture. It's a city that never sleeps, pulsating with life day and night.",
@@ -11,7 +11,7 @@
     "itineraries": [],
   },
   {
-    "_id": "64fa501d4bbe915a1f740581",
+    "_id": "64fbc6524280a9e4479ec703",
     "city": "São Paulo",
     "country": "Brazil",
     "description": "São Paulo, the largest city in Brazil, is celebrated for its cultural and economic diversity. Skyscrapers dot the skyline, reflecting the city's modernity.",
@@ -21,7 +21,7 @@
     "itineraries": [],
   },
   {
-    "_id": "64fa501d4bbe915a1f740582",
+    "_id": "64fbc6524280a9e4479ec704",
     "city": "Mexico City",
     "country": "Mexico",
     "description": "Mexico City, the capital of Mexico, is steeped in history while embracing modernity. Its streets teem with stories from ancient civilizations to contemporary art.",
@@ -31,7 +31,7 @@
     "itineraries": [],
   },
   {
-    "_id": "64fa501d4bbe915a1f740583",
+    "_id": "64fbc6524280a9e4479ec705",
     "city": "Bogotá",
     "country": "Colombia",
     "description": "Bogotá, the capital of Colombia, nestles in the Andes, offering breathtaking views. It's a city where history and nature coexist in perfect harmony.",
@@ -41,7 +41,7 @@
     "itineraries": [],
   },
   {
-    "_id": "64fa501d4bbe915a1f740584",
+    "_id": "64fbc6524280a9e4479ec706",
     "city": "Lima",
     "country": "Peru",
     "description": "Lima, the capital of Peru, is a tapestry of pre-Columbian and colonial history. Its streets whisper tales of ancient civilizations and Spanish conquests.",
@@ -51,7 +51,7 @@
     "itineraries": [],
   },
   {
-    "_id": "64fa501d4bbe915a1f740585",
+    "_id": "64fbc6524280a9e4479ec707",
     "city": "Santiago",
     "country": "Chile",
     "description": "Santiago, the capital of Chile, cradles in the embrace of the Andes. A city where modernity meets the majesty of the mountains.",
@@ -61,7 +61,7 @@
     "itineraries": [],
   },
   {
-    "_id": "64fa501d4bbe915a1f740586",
+    "_id": "64fbc6524280a9e4479ec708",
     "city": "Montevideo",
     "country": "Uruguay",
     "description": "Montevideo, the capital of Uruguay, is a city of sandy beaches and colonial architecture. Each corner whispers stories of a rich maritime history.",
@@ -71,7 +71,7 @@
     "itineraries": [],
   },
   {
-    "_id": "64fa501d4bbe915a1f740587",
+    "_id": "64fbc6524280a9e4479ec709",
     "city": "Quito",
     "country": "Ecuador",
     "description": "Quito, the capital of Ecuador, cradles in a valley surrounded by volcanoes. It's a city where history meets the untamed beauty of nature.",
@@ -81,7 +81,7 @@
     "itineraries": [],
   },
   {
-    "_id": "64fa501d4bbe915a1f740588",
+    "_id": "64fbc6524280a9e4479ec70a",
     "city": "Caracas",
     "country": "Venezuela",
     "description": "Caracas, the capital of Venezuela, rests in a mountainous valley. It's a city where vibrant culture thrives amidst breathtaking natural beauty.",
@@ -91,7 +91,7 @@
     "itineraries": [],
   },
   {
-    "_id": "64fa501d4bbe915a1f740589",
+    "_id": "64fbc6524280a9e4479ec70b",
     "city": "La Paz",
     "country": "Bolivia",
     "description": "La Paz, the capital of Bolivia, stands as the highest capital city in the world. Its streets are alive with the energy of a unique blend of cultures.",
@@ -101,7 +101,7 @@
     "itineraries": [],
   },
   {
-    "_id": "64fa501d4bbe915a1f74058a",
+    "_id": "64fbc6524280a9e4479ec70c",
     "city": "Asunción",
     "country": "Paraguay",
     "description": "Asunción, the capital of Paraguay, rests on the banks of the Paraguay River. It's a city where history echoes through colonial architecture and vibrant markets.",
@@ -111,7 +111,7 @@
     "itineraries": [],
   },
   {
-    "_id": "64fa501d4bbe915a1f74058b",
+    "_id": "64fbc6524280a9e4479ec70d",
     "city": "Cuzco",
     "country": "Peru",
     "description": "Cuzco, the ancient capital of the Inca Empire, is adorned with mesmerizing ruins and colonial architecture. It's a city where every stone tells a story.",
@@ -121,7 +121,7 @@
     "itineraries": [],
   },
   {
-    "_id": "64fa501d4bbe915a1f74058c",
+    "_id": "64fbc6524280a9e4479ec70e",
     "city": "Medellín",
     "country": "Colombia",
     "description": "Medellín, an innovative and modern city in Colombia, is cradled by the Andes. It's a city where innovation thrives amidst the beauty of nature.",
@@ -131,7 +131,7 @@
     "itineraries": [],
   },
   {
-    "_id": "64fa501d4bbe915a1f74058d",
+    "_id": "64fbc6524280a9e4479ec70f",
     "city": "Rio de Janeiro",
     "country": "Brazil",
     "description": "Rio de Janeiro, famous for its iconic beaches and the statue of Christ the Redeemer, is a city where nature and culture blend in perfect harmony.",
@@ -141,7 +141,7 @@
     "itineraries": [],
   },
   {
-    "_id": "64fa501d4bbe915a1f74058e",
+    "_id": "64fbc6524280a9e4479ec710",
     "city": "Havana",
     "country": "Cuba",
     "description": "Havana, the capital of Cuba, boasts a rich history and colonial architecture. It's a city where time seems to stand still, preserving its unique charm.",
