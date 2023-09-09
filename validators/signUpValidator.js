@@ -30,4 +30,4 @@ const signUpSchema = joi.object({
   verified: joi.boolean(),
 });
 
-export default signUpSchema;
+export {signUpSchema};
