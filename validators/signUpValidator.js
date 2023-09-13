@@ -18,8 +18,9 @@ const signUpSchema = joi.object({
     "string.email": "Email must have @ & '.com'.",
   }),
   password: joiPwd(complexityOptions).required(),
-  name: joi.string().min(3).max(15).required().messages({
+  name: joi.string().min(3).max(50).required().messages({
     "string.min": "Minimum 3 characters.",
+    "string.max": "Maximum 50 characters.",
   }),
   photo: joi.string().uri(),
   birth_date: joi.date().max(Date.now()),

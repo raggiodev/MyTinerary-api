@@ -10,7 +10,7 @@ const authRouter = Router();
 
 const { signUp, signIn, loginWithToken } = authController;
 
-authRouter.post("/singUp", validator(signUpSchema), emailExists, signUp);
+authRouter.post("/signUp", validator(signUpSchema), emailExists, signUp);
 authRouter.post("/signIn", validator(signInSchema), signIn);
 authRouter.get('/token', passport.authenticate('jwt', { session: false }), loginWithToken)
 
