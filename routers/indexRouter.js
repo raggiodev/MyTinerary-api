@@ -11,6 +11,6 @@ indexRouter.get("/", (req, res, next) => {
 
 indexRouter.use("/cities", citiesRouter);
 indexRouter.use("/itineraries", itinerariesRouter);
-indexRouter.use("/users", authRouter);
+indexRouter.use("/auth", authRouter);
 
 export default indexRouter;
