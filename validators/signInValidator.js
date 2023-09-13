@@ -17,9 +17,7 @@ const signInSchema = joi.object({
     "any.required": "Email is required.",
     "string.email": "Email must have @ & '.com'.",
   }),
-  password: joiPwd(complexityOptions).messages({
-    
-  }),
+  password: joiPwd(complexityOptions).required(),
 });
 
 export default signInSchema;

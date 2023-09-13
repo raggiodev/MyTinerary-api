@@ -17,9 +17,7 @@ const signUpSchema = joi.object({
     "any.required": "Email is required.",
     "string.email": "Email must have @ & '.com'.",
   }),
-  password: joiPwd(complexityOptions).messages({
-    
-  }),
+  password: joiPwd(complexityOptions).required(),
   name: joi.string().min(3).max(15).required().messages({
     "string.min": "Minimum 3 characters.",
   }),
@@ -30,4 +28,4 @@ const signUpSchema = joi.object({
   verified: joi.boolean(),
 });
 
-export {signUpSchema};
+export default signUpSchema;
