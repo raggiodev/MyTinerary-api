@@ -13,9 +13,10 @@ const authController = {
 
       const newUser = await User.create(body);
 
-      /*  const esIgual = bcrypt.compareSync(req.body.password, passwordHash) */
+      // const esIgual = bcrypt.compareSync(req.body.password, passwordHash)
 
-      /*      console.log(esIgual); */
+      // console.log(esIgual);
+
       const token = jwt.sign(
         { email: newUser.email, photo: newUser.photo },
         process.env.SECRET_KEY,
@@ -73,7 +74,7 @@ const authController = {
       success: true,
       userData: { email, photo, name },
       message: "Sign in successfully",
-      /*  body: req.body */
+      // body: req.body
     });
   },
 };
