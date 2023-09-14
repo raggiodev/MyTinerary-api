@@ -1,80 +1,82 @@
-import User from "../models/User.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
+import User from "../models/User.js";
 
 const authController = {
   signUp: async (req, res, next) => {
     try {
       const passwordHash = bcrypt.hashSync(req.body.password, 10);
-      console.log(passwordHash);
 
       let body = { ...req.body };
       body.password = passwordHash;
 
       const newUser = await User.create(body);
 
-      // const esIgual = bcrypt.compareSync(req.body.password, passwordHash)
-
-      // console.log(esIgual);
+      let { email, name, photo, _id } = newUser;
 
       const token = jwt.sign(
-        { email: newUser.email, photo: newUser.photo },
-        process.env.SECRET_KEY,
+        { email, name, photo, _id },
+        process.env["SECRET_KEY"],
         { expiresIn: "1h" }
       );
+
       return res.status(201).json({
         success: true,
-        userData: newUser,
+        response: { email, name, photo, _id },
         token: token,
-        message: "Sign up successfully",
+        message: "Sign up successfully.",
       });
-    }
-    catch (error) {
-      console.log(error);
-      next(error);
+    } catch (err) {
+      console.log(err);
+      next(err);
     }
   },
 
   signIn: async (req, res, next) => {
     try {
-      let { email: emailBody, password } = req.body;
+      const user = await User.findOne({ email: req.body.email });
 
-      const userInDB = await User.findOne({ email: emailBody });
-
-      if (!userInDB) {
-        throw new Error("No user exists with this email ");
+      if (!user) {
+        throw new Error("There are no users with this email address.");
       }
 
-      let passwordValidated = bcrypt.compareSync(password, userInDB.password);
+      let passwordIsCorrect = bcrypt.compareSync(
+        req.body.password,
+        user.password
+      );
 
-      if (!passwordValidated) {
-        throw new Error("The email/password is incorrect");
+      if (!passwordIsCorrect) {
+        throw new Error("Incorrect email address or password");
       }
 
-      let { email, photo, age } = userInDB;
-      const token = jwt.sign({ email, photo }, process.env.SECRET_KEY, {
-        expiresIn: "1h",
-      });
+      let { email, name, photo, _id } = user;
+
+      const token = jwt.sign(
+        { email, name, photo, _id },
+        process.env["SECRET_KEY"],
+        { expiresIn: "1h" }
+      );
+
       return res.status(200).json({
         success: true,
-        userData: { email, photo, age },
+        response: { email, name, photo, _id },
         token: token,
-        message: "Sign in successfully",
+        message: "Sign in successfully.",
       });
-    }
-    catch (error) {
-      console.log(error);
-      next(error);
+    } catch (err) {
+      console.log(err);
+      next(err);
     }
   },
 
   loginWithToken: (req, res) => {
-    const { email, photo, name } = req.user;
+    const { email, name, photo, _id } = req.user;
+
     res.status(200).json({
       success: true,
-      userData: { email, photo, name },
-      message: "Sign in successfully",
-      // body: req.body
+      response: { email, name, photo, _id },
+      message: "Sign in successfully.",
+      body: req.body,
     });
   },
 };

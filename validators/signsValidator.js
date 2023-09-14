@@ -28,4 +28,11 @@ export const signUpSchema = joi.object({
   verified: joi.boolean(),
 });
 
-export default signUpSchema;
+export const signInSchema = joi.object({
+  email: joi.string().email().required().messages({
+    "any.required": "The email is required",
+    "string.empty": "The field email cannot be empty.",
+    "string.email": "Invalid email address. Please enter a valid email.",
+  }),
+  password: joiPassword(complexityOptions),
+});

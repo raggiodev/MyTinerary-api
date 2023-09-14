@@ -1,36 +1,16 @@
 import {Schema, model} from "mongoose";
 
-const activitySchema = Schema({
-  activities: {
-    firstActivity: {
-      type: {
-        title: { type: String, required: true },
-        image: { type: String, required: true },
-      },
-      required: true,
-    },
-    secondActivity: {
-      type: {
-        title: { type: String, required: true },
-        image: { type: String, required: true },
-      },
-      required: true,
-    },
-    thirdActivity: {
-      type: {
-        title: { type: String, required: true },
-        image: { type: String, required: true },
-      },
-      required: true,
-    },
+const activitySchema = Schema(
+  {
+    name: { type: String, required: true },
+    itineraryId: { type: Schema.ObjectId, ref: "itineraries", required: true },
+    photo: { type: String, required: true },
   },
-  itineraryRelated: {
-    type: Schema.Types.ObjectId,
-    ref: "itinerary",
-    required: true,
-  },
-});
+  {
+    timestamps: true,
+  }
+);
 
-const Activity = model("activity", activitySchema);
+const Activity = model("activities", activitySchema);
 
 export default Activity;

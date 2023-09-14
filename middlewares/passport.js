@@ -1,23 +1,22 @@
-import passport from "passport";
 import {Strategy, ExtractJwt} from "passport-jwt";
+import passport from "passport";
 import User from "../models/User.js";
 
-const opt = {
+var opts = {
   jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-  secretOrKey: process.env.SECRET_KEY,
+  secretOrKey: process.env["SECRET_KEY"],
 };
 
 const fn = async (payload, next) => {
   try {
     const user = await User.findOne({ email: payload.email });
-    if (!user) {
-      throw new Error("No user exists with this email ");
+    if (user) {
+      next(null, user);
     }
-    next(null, user);
   }
-  catch (error) {
-    next(error, null);
+  catch (err) {
+    console.log(err);
   }
 };
 
-export default passport.use(new Strategy(opt, fn));
+export default passport.use(new Strategy(opts, fn));
