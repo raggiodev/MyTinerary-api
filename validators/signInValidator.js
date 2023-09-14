@@ -1,9 +1,9 @@
 import joi from "joi";
-import joiPwd from "joi-password-complexity";
+import joiPassword from "joi-password-complexity";
 
 const complexityOptions = {
-  min: 4,
-  max: 30,
+  min: 3,
+  max: 50,
   lowerCase: 1,
   upperCase: 1,
   numeric: 1,
@@ -11,13 +11,13 @@ const complexityOptions = {
   requirementCount: 3,
 };
 
-const signInSchema = joi.object({
+export const signInSchema = joi.object({
   email: joi.string().email().required().messages({
-    "string.empty": "Email cannot be empty.",
-    "any.required": "Email is required.",
-    "string.email": "Email must have @ & '.com'.",
+    "any.required": "The email is required",
+    "string.empty": "The field email cannot be empty.",
+    "string.email": "Invalid email address. Please enter a valid email.",
   }),
-  password: joiPwd(complexityOptions).required(),
+  password: joiPassword(complexityOptions),
 });
 
 export default signInSchema;

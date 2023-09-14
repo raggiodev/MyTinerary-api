@@ -1,9 +1,9 @@
 import joi from "joi";
-import joiPwd from "joi-password-complexity";
+import joiPassword from "joi-password-complexity";
 
 const complexityOptions = {
-  min: 4,
-  max: 30,
+  min: 3,
+  max: 50,
   lowerCase: 1,
   upperCase: 1,
   numeric: 1,
@@ -11,21 +11,20 @@ const complexityOptions = {
   requirementCount: 3,
 };
 
-const signUpSchema = joi.object({
+export const signUpSchema = joi.object({
+  name: joi.string().required().min(3).messages({
+    "any.required": "The name is required",
+    "string.min": "Name is too short. Please enter at least 3 characters.",
+    "string.max": "Name is too long. Please limit to 50 characters.",
+  }),
   email: joi.string().email().required().messages({
-    "string.empty": "Email cannot be empty.",
-    "any.required": "Email is required.",
-    "string.email": "Email must have @ & '.com'.",
+    "any.required": "The email is required",
+    "string.empty": "The field email cannot be empty.",
+    "string.email": "Invalid email address. Please enter a valid email.",
   }),
-  password: joiPwd(complexityOptions).required(),
-  name: joi.string().min(3).max(50).required().messages({
-    "string.min": "Minimum 3 characters.",
-    "string.max": "Maximum 50 characters.",
-  }),
+  password: joiPassword(complexityOptions).required(),
   photo: joi.string().uri(),
   birth_date: joi.date().max(Date.now()),
-  age: joi.number().min(0).max(60),
-  phone: joi.number(),
   verified: joi.boolean(),
 });
 
