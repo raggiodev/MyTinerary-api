@@ -12,11 +12,11 @@ const complexityOptions = {
 };
 
 export const signUpSchema = joi.object({
-  name: joi.string().required().min(3).messages({
+  name: joi.string().required().min(3).max(50).messages({
     "any.required": "The name is required",
     "string.min": "Name is too short. Please enter at least 3 characters.",
     "string.max": "Name is too long. Please limit to 50 characters.",
-  }),
+  }),  
   email: joi.string().email().required().messages({
     "any.required": "The email is required",
     "string.empty": "The field email cannot be empty.",
