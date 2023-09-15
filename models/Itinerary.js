@@ -11,12 +11,7 @@ const itinerarySchema = Schema(
     likes: { type: Number, default: 0 },
     hashtags: [{ type: String }],
     city: { type: Schema.Types.ObjectId, ref: "City", required: true }, // Referencia al model 'City'
-    comments: [
-      {
-        comment: { type: String, required: true },
-        user: { type: Schema.Types.ObjectId, required: true, ref: "user" },
-      },
-    ], // Referencia al model 'User'
+    comments: [{ comment: { type: String, required: true }, user: { type: Schema.Types.ObjectId, required: true, ref: "user" } }], // Referencia al model 'User'
   },
   {
     timestamps: true,
