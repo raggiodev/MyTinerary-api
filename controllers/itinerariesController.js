@@ -37,10 +37,20 @@ const itinerariesController = {
     }
   },
 
+  // Obtener un itinerario por ID
+  getOneItinerary: async (req, res) => {
+    try {
+      const itinerary = await Itinerary.findById(req.params.id);
+      res.status(200).json({ response: itinerary });
+    } catch (error) {
+      res.status(500).json({ response: error });
+    }
+  },
+
   // Obtener itinerarios por ID de ciudad
   getItinerariesByCity: async (req, res) => {
     try {
-      const cityId = await City.findOne({city: req.params.cityId});
+      const cityId = await City.findOne({ city: req.params.cityId });
       const itineraries = await Itinerary.find({ city: cityId });
       res.status(200).json({ response: itineraries });
     } catch (error) {
