@@ -6,6 +6,7 @@ const citiesRouter = Router();
 // Creación de routes para 'cities'
 citiesRouter.post('/', citiesController.createCity);
 citiesRouter.post('/many/', citiesController.createManyCities);
+
 citiesRouter.get('/', citiesController.getAllCities);
 citiesRouter.get('/id/:id', citiesController.getCityById);
 citiesRouter.get('/:city', citiesController.getCityByName);
@@ -18,7 +19,9 @@ citiesRouter.get('/populationOrder/:order', citiesController.getCitiesByPopulati
 citiesRouter.get('/populationNameOrder/:min/:max/:order', citiesController.getCitiesByPopulationRangeAndNameOrder);
 citiesRouter.get('/shortDescriptions', citiesController.getCitiesWithShortDescriptions);
 citiesRouter.get('/countryPopulationOrder/:country/:order', citiesController.getCitiesByCountryAndPopulationOrder);
+
 citiesRouter.put('/', citiesController.updateCity);
+
 citiesRouter.delete('/', citiesController.deleteCity);
 
 export default citiesRouter;
