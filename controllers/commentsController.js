@@ -35,10 +35,10 @@ const CommentsController = {
   createAllCommentsByItinerary: async (req, res, next) => {
     try {
       let comments = await Comment.find({
-        itineraryId: req.params.itineraryId,
+        itineraryId: req.params.itineraryId
       }).populate({
         path: "userId",
-        select: "name photo",
+        select: "name photo"
       });
       res.status(200).json({ response: comments });
     }
