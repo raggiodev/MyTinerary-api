@@ -15,6 +15,6 @@ const citySchema = Schema(
   }
 );
 
-const City = model("Cities", citySchema);
+const City = model("cities", citySchema);
 
 export default City;

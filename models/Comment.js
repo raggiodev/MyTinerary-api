@@ -2,8 +2,8 @@ import {Schema, model} from "mongoose";
 
 const commentSchema = Schema(
   {
-    userId: { type: Schema.ObjectId, ref: "users", required: true },
-    itineraryId: { type: Schema.ObjectId, ref: "itineraries", required: true },
+    userId: { type: Schema.ObjectId, ref: "User", required: true },
+    itineraryId: { type: Schema.ObjectId, ref: "Itinerary", required: true },
     text: { type: String, required: true },
   },
   {
