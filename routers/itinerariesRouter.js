@@ -6,6 +6,7 @@ const itinerariesRouter = Router();
 // Creación de routers para obtener los itinerarios por 'city'
 itinerariesRouter.post('/', itinerariesController.createItinerary);
 
+itinerariesRouter.get('/', itinerariesController.getAllItineraries);
 itinerariesRouter.get('/id/:id', itinerariesController.getOneItinerary);
 itinerariesRouter.get('/:cityId', itinerariesController.getItinerariesByCity);
 
