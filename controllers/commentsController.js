@@ -22,7 +22,7 @@ const CommentsController = {
     }
   },
 
-  readAllComments: async (req, res, next) => {
+  createAllComments: async (req, res, next) => {
     try {
       let comments = await Comment.find();
       res.status(200).json({ response: comments });
@@ -32,7 +32,7 @@ const CommentsController = {
     }
   },
 
-  readAllCommentsByItinerary: async (req, res, next) => {
+  createAllCommentsByItinerary: async (req, res, next) => {
     try {
       let comments = await Comment.find({
         itineraryId: req.params.itineraryId,
@@ -47,7 +47,7 @@ const CommentsController = {
     }
   },
 
-  readOneCommentById: async (req, res, next) => {
+  createOneCommentById: async (req, res, next) => {
     try {
       let comment = await Comment.findById(req.params.id);
       res.status(200).json({ response: comment });
@@ -57,7 +57,7 @@ const CommentsController = {
     }
   },
 
-  readOneCommentByName: async (req, res, next) => {
+  createOneCommentByName: async (req, res, next) => {
     try {
       let comment = await Comment.findOne({ name: req.params.comment });
       res.status(200).json({ response: comment });
