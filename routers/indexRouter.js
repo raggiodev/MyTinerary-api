@@ -1,9 +1,9 @@
 import {Router} from "express";
-import citiesRouter from "./citiesRouter.js";
-import itinerariesRouter from "./itinerariesRouter.js";
-import activitiesRouter from "./activitiesRouter.js";
-import commentsRouter from "./commentsRouter.js";
 import authRouter from "./authRouter.js";
+import citiesRouter from "./citiesRouter.js";
+import commentsRouter from "./commentsRouter.js";
+import activitiesRouter from "./activitiesRouter.js";
+import itinerariesRouter from "./itinerariesRouter.js";
 
 const indexRouter = Router();
 

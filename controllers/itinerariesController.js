@@ -1,5 +1,5 @@
-import Itinerary from "../models/Itinerary.js";
 import City from "../models/City.js";
+import Itinerary from "../models/Itinerary.js";
 
 const itinerariesController = {
   // Crear un nuevo itinerario - POST
@@ -21,7 +21,8 @@ const itinerariesController = {
       const savedItinerary = await Itinerary.insertMany(req.body);
 
       res.status(201).json(savedItinerary);
-    } catch (error) {
+    }
+    catch (error) {
       console.error(error);
       res.status(500).json({ message: "Error creating itinerary" });
     }
@@ -32,7 +33,8 @@ const itinerariesController = {
     try {
       const itineraries = await Itinerary.find();
       res.status(200).json({ response: itineraries });
-    } catch (error) {
+    }
+    catch (error) {
       res.status(500).json({ response: error });
     }
   },
@@ -42,7 +44,8 @@ const itinerariesController = {
     try {
       const itinerary = await Itinerary.findById(req.params.id);
       res.status(200).json({ response: itinerary });
-    } catch (error) {
+    }
+    catch (error) {
       res.status(500).json({ response: error });
     }
   },
@@ -53,7 +56,8 @@ const itinerariesController = {
       const cityId = await City.findOne({ city: req.params.cityId });
       const itineraries = await Itinerary.find({ city: cityId });
       res.status(200).json({ response: itineraries });
-    } catch (error) {
+    }
+    catch (error) {
       res.status(500).json({ response: error });
     }
   },
@@ -67,7 +71,8 @@ const itinerariesController = {
         { new: true }
       );
       res.status(200).json({ response: updatedItinerary });
-    } catch (error) {
+    }
+    catch (error) {
       res.status(500).json({ response: error });
     }
   },
@@ -77,7 +82,8 @@ const itinerariesController = {
     try {
       await Itinerary.findByIdAndDelete(req.params.id);
       res.status(200).json({ response: "Itinerary deleted successfully" });
-    } catch (error) {
+    }
+    catch (error) {
       res.status(500).json({ response: error });
     }
   },

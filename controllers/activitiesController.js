@@ -6,7 +6,8 @@ const ActivitiesController = {
       let activity = await Activity.create(req.body);
 
       res.status(201).json({ response: activity });
-    } catch (err) {
+    }
+    catch (err) {
       next(err);
     }
   },
@@ -15,7 +16,8 @@ const ActivitiesController = {
     try {
       let activities = await Activity.insertMany(req.body);
       res.status(201).json({ response: activities });
-    } catch (err) {
+    }
+    catch (err) {
       next(err);
     }
   },
@@ -24,7 +26,8 @@ const ActivitiesController = {
     try {
       let activities = await Activity.find();
       res.status(200).json({ response: activities });
-    } catch (err) {
+    }
+    catch (err) {
       next(err);
     }
   },
@@ -35,7 +38,8 @@ const ActivitiesController = {
         itineraryId: req.params.itineraryId,
       });
       res.status(200).json({ response: activities });
-    } catch (err) {
+    }
+    catch (err) {
       next(err);
     }
   },
@@ -44,7 +48,8 @@ const ActivitiesController = {
     try {
       let activity = await Activity.findById(req.params.id);
       res.status(200).json({ response: activity });
-    } catch (err) {
+    }
+    catch (err) {
       next(err);
     }
   },
@@ -53,7 +58,8 @@ const ActivitiesController = {
     try {
       let activity = await Activity.findOne({ name: req.params.activity });
       res.status(200).json({ response: activity });
-    } catch (err) {
+    }
+    catch (err) {
       next(err);
     }
   },
@@ -64,7 +70,8 @@ const ActivitiesController = {
         new: true,
       });
       res.status(200).json({ response: activity });
-    } catch (err) {
+    }
+    catch (err) {
       next(err);
     }
   },
@@ -73,7 +80,8 @@ const ActivitiesController = {
     try {
       await Activity.findByIdAndDelete(req.body._id);
       res.status(200).json({ response: "resource deleted successfully" });
-    } catch (err) {
+    }
+    catch (err) {
       next(err);
     }
   },

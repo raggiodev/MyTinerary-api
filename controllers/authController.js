@@ -26,7 +26,8 @@ const authController = {
         token: token,
         message: "Sign up successfully.",
       });
-    } catch (err) {
+    }
+    catch (err) {
       console.log(err);
       next(err);
     }
@@ -63,7 +64,8 @@ const authController = {
         token: token,
         message: "Sign in successfully.",
       });
-    } catch (err) {
+    }
+    catch (err) {
       console.log(err);
       next(err);
     }
