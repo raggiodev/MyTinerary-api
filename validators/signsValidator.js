@@ -3,7 +3,7 @@ import joiPassword from "joi-password-complexity";
 
 const complexityOptions = {
   min: 3,
-  max: 50,
+  max: 100,
   lowerCase: 1,
   upperCase: 1,
   numeric: 1,
@@ -12,10 +12,10 @@ const complexityOptions = {
 };
 
 export const signUpSchema = joi.object({
-  name: joi.string().required().min(3).max(50).messages({
+  name: joi.string().required().min(3).max(100).messages({
     "any.required": "The name is required",
     "string.min": "Name is too short. Please enter at least 3 characters.",
-    "string.max": "Name is too long. Please limit to 50 characters.",
+    "string.max": "Name is too long. Please limit to 100 characters.",
   }),  
   email: joi.string().email().required().messages({
     "any.required": "The email is required",
