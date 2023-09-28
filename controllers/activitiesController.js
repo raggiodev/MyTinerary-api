@@ -79,7 +79,7 @@ const ActivitiesController = {
   deleteOneActivity: async (req, res, next) => {
     try {
       await Activity.findByIdAndDelete(req.body._id);
-      res.status(200).json({ response: "resource deleted successfully" });
+      res.status(200).json({ response: "Activity deleted successfully" });
     }
     catch (err) {
       next(err);
