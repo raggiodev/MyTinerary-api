@@ -82,7 +82,7 @@ const CommentsController = {
   deleteOneComment: async (req, res, next) => {
     try {
       await Comment.findByIdAndDelete(req.body._id);
-      res.status(200).json({ response: "Resource Deleted successfully!" });
+      res.status(200).json({ response: "Comment deleted successfully!" });
     }
     catch (err) {
       next(err);

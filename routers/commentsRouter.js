@@ -1,7 +1,16 @@
-import {Router} from "express";
+import { Router } from "express";
 import CommentsController from "../controllers/commentsController.js";
 
-const { createOneComment, createManyComments, createAllComments, createAllCommentsByItinerary, createOneCommentById, createOneCommentByName, updateOneComment, deleteOneComment } = CommentsController;
+const {
+  createOneComment,
+  createManyComments,
+  createAllComments,
+  createAllCommentsByItinerary,
+  createOneCommentById,
+  createOneCommentByName,
+  updateOneComment,
+  deleteOneComment,
+} = CommentsController;
 
 const commentsRouter = Router();
 
