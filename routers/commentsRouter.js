@@ -22,8 +22,7 @@ commentsRouter.get("/:itineraryId", createAllCommentsByItinerary);
 commentsRouter.get("/id/:id", createOneCommentById);
 commentsRouter.get("/name/:itinerary", createOneCommentByName);
 
-commentsRouter.put("/", updateOneComment);
-
-commentsRouter.delete("/", deleteOneComment);
+commentsRouter.put("/:id", updateOneComment);
+commentsRouter.delete("/:id", deleteOneComment);
 
 export default commentsRouter;
